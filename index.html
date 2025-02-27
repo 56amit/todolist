@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4285f4">
+    <title>Simple PWA</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="assets/images/icons/icon-192x192.png">
+</head>
+<body>
+    <header>
+        <h1>Simple PWA</h1>
+        <div class="connection-status" id="connection-status">Online</div>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Notes</h2>
+            <form id="note-form">
+                <input type="text" id="note-title" placeholder="Title" required>
+                <textarea id="note-content" placeholder="Content" required></textarea>
+                <button type="submit">Save Note</button>
+            </form>
+        </section>
+
+        <section class="card" id="notes-container">
+            <div class="loader" id="notes-loader"></div>
+            <!-- Notes will be dynamically added here -->
+        </section>
+
+        <section class="card">
+            <h2>Images</h2>
+            <div class="image-gallery">
+                <img class="lazy-image" data-src="assets/images/content/image1.jpg" alt="Image 1">
+                <img class="lazy-image" data-src="assets/images/content/image2.jpg" alt="Image 2">
+                <img class="lazy-image" data-src="assets/images/content/image3.jpg" alt="Image 3">
+                <img class="lazy-image" data-src="assets/images/content/image4.jpg" alt="Image 4">
+                <img class="lazy-image" data-src="assets/images/content/image5.jpg" alt="Image 5">
+                <img class="lazy-image" data-src="assets/images/content/image6.jpg" alt="Image 6">
+            </div>
+        </section>
+    </main>
+
+    <section class="notification-permission" id="notification-permission">
+        <div class="card">
+            <h2>Enable Notifications</h2>
+            <p>Get updates when new content is available.</p>
+            <button id="enable-notifications">Enable Notifications</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>Simple PWA - <a href="#" id="clear-data">Clear Data</a></p>
+    </footer>
+
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/db.js"></script>
+    <script src="assets/js/notification.js"></script>
+    <script src="assets/js/lazy-loading.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150">
+  <rect width="200" height="150" fill="#e0e0e0"/>
+  <text x="100" y="75" font-family="Arial" font-size="14" fill="#666666" text-anchor="middle">Image not available</text>
+  <path d="M50,60 L80,90 L50,90 Z" fill="#999999"/>
+  <path d="M80,60 C85,60 90,65 90,70 C90,75 85,80 80,80 C75,80 70,75 70,70 C70,65 75,60 80,60 Z" fill="#999999"/>
+  <path d="M90,90 L150,90 L120,60 Z" fill="#999999"/>
+</svg>
